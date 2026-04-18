@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoDeluxe · Portafolio</title>
+  <link rel="icon" href="https://github.com/RoDeluxe.png" />
+  <link rel="stylesheet" href="styles/styles.css">
+  
+</head>
+<body>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+
+    <div class="home-left">
+      <p class="home-greeting">Hola! Soy</p>
+      <h1 class="home-name">Ronaldo Gutierrez</h1>
+      <p class="home-role">Programador</p>
+      <p class="home-desc">
+        Estudiante de la Universidad Adventista Dominicana Trabajo con HTML CSS Y Javascript construyendo diferentes tipos de proyectos.
+      </p>
+      <div class="btn-group">
+        <button class="btn filled" onclick="goTo('github')">Ver GitHub</button>
+        <button class="btn"        onclick="goTo('projects')">Ver Proyectos</button>
+      </div>
+    </div>
+
+    <div class="home-right">
+      <div class="avatar-wrap">
+        <img src="https://github.com/RoDeluxe.png" alt="RoDeluxe" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GITHUB -->
+  <div class="page" id="page-github">
+    <div class="sub-page">
+      <span class="back" onclick="goTo('home')">← Volver</span>
+      <h2>GitHub</h2>
+      <p class="subtitle">Mi Perfil de GitHub</p>
+
+      <div class="profile-card">
+        <img src="https://github.com/RoDeluxe.png" alt="Avatar" />
+        <div class="profile-info">
+          <h3>Ronaldo Gutierrez · Matricula 2024-0204</h3>
+          <p>github.com/RoDeluxe</p>
+        </div>
+        <a class="btn filled" href="https://github.com/RoDeluxe" target="_blank">Visitar perfil</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROYECTOS -->
+  <div class="page" id="page-projects">
+    <div class="sub-page">
+      <span class="back" onclick="goTo('home')">← Volver</span>
+      <h2>Proyectos</h2>
+      <p class="subtitle">Todos mis proyectos públicos</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Proyecto-Final</h3>
+          <p>Proyecto final.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/Proyecto-Final" target="_blank">Ver en GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Examen-Form</h3>
+          <p>Examen.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/Examen-Form" target="_blank">Ver en GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>AniCode</h3>
+          <p>Clon de netflix.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/AniCode" target="_blank">Ver en GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Formulario</h3>
+          <p>Formulario de HTML.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/Formulario" target="_blank">Ver en GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>NoticiasWEB</h3>
+          <p>Sitio de noticias.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/NoticiasWEB" target="_blank">Ver en GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Proyecto-Web</h3>
+          <p>Mi Primer proyecto Introducción al Desarrollo Web.</p>
+          <span class="project-lang">HTML</span>
+          <a href="https://github.com/RoDeluxe/Proyecto-Web" target="_blank">Ver en GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function goTo(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + page).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
