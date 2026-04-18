@@ -1,6 +1,4 @@
-/* ===========================
-       VARIABLES — edita aquí
-    =========================== */
+/* Colores Base */
     :root {
       --bg:        #1e1e1e;
       --surface:   #272727;
@@ -12,9 +10,7 @@
       --font:      system-ui, sans-serif;
     }
 
-    /* ===========================
-       BASE
-    =========================== */
+    /* BASE */
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
@@ -27,15 +23,11 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* ===========================
-       PÁGINAS
-    =========================== */
+    /* PÁGINAS */
     .page { display: none; }
     .page.active { display: block; }
 
-    /* ===========================
-       HOME
-    =========================== */
+    /* HOME */
     #page-home {
       display: none;
       min-height: 100vh;
@@ -46,7 +38,7 @@
     }
     #page-home.active { display: flex; }
 
-    /* left column */
+    /* Columna Izquierda*/
     .home-left {
       display: flex;
       flex-direction: column;
@@ -140,9 +132,7 @@
       display: block;
     }
 
-    /* ===========================
-       SUBPÁGINAS
-    =========================== */
+    /* Subpaginas */
     .sub-page {
       max-width: 860px;
       margin: 0 auto;
@@ -171,9 +161,7 @@
       margin-bottom: 2.5rem;
     }
 
-    /* ===========================
-       GITHUB
-    =========================== */
+    /* Github */
     .profile-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -197,9 +185,7 @@
     .profile-info h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
     .profile-info p  { color: var(--muted); font-size: 0.88rem; }
 
-    /* ===========================
-       PROYECTOS
-    =========================== */
+    /* Proyectos */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -234,9 +220,7 @@
       margin-top: 0.25rem;
     }
 
-    /* ===========================
-       RESPONSIVE
-    =========================== */
+    /* responsive */
     @media (max-width: 700px) {
       #page-home.active {
         flex-direction: column-reverse;
